@@ -1,0 +1,199 @@
+body {
+    background: linear-gradient(135deg, #141e30, #243b55);
+    color: white;
+    font-family: 'Segoe UI', sans-serif;
+
+    margin: 0;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: all 0.5s ease;
+}
+
+/* LIGHT MODE */
+body.light-mode {
+    background: linear-gradient(135deg, #fdfbfb, #ebedee);
+    color: black;
+}
+
+.light-mode .container {
+    background-color: rgba(255, 255, 255, 0.7);
+    border: 2px solid #ccc;
+}
+
+.light-mode button {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+}
+
+/* MAIN CONTAINER (Glass Effect) */
+.container {
+    border: 2px solid rgba(255,255,255,0.2);
+    background: rgba(25, 25, 25, 0.6);
+    backdrop-filter: blur(10px);
+
+    padding: 30px;
+    text-align: center;
+    border-radius: 20px;
+
+    box-shadow: 0 0 30px rgba(0, 255, 255, 0.1);
+}
+
+/*  HEADING */
+.heading {
+    font-size: 34x;
+    letter-spacing: 1px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/*  BUTTON SECTION */
+.buttons {
+    margin-bottom: 20px;
+}
+
+/*  MOVE BUTTON */
+.move-button {
+    background-color: transparent;
+    border-radius: 50%;
+    border: 3px solid white;
+    padding: 25px;
+    margin: 10px;
+    cursor: pointer;
+
+    transition: all 0.25s ease;
+}
+
+.move-button:hover {
+    transform: scale(1.15);
+    transition: 0.2s;
+    box-shadow: 0 0 20px #00f7ff;
+}
+
+.move-button:active{
+    transform: scale(0.9);
+}
+
+/*  ICON */
+.move-icon {
+    height: 50px;
+}
+
+/* RESULT */
+.result {
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* RESULT ANIMATION */
+.show-result {
+    transform: scale(1.3);
+    color: #00ffcc;
+}
+
+/* MOVE DISPLAY */
+.move {
+    margin-bottom: 25px;
+    font-size: 18px;
+}
+
+/* SCOREBOARD */
+.scoreboard {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+    font-size: 18px;
+    background: rgba(255,255,255,0.05);
+    padding: 10px;
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+/* CONTROLS */
+.controls {
+    margin-top: 15px;
+}
+
+/* BUTTONS */
+.reset-score-button {
+    padding: 8px 15px;
+    font-size: 14px;
+    margin: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.reset-score-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px #00c6ff;
+}
+
+/*  KEY INFO BUTTON */
+.key-info-button {
+    background-color: transparent;
+    border-radius: 50%;
+    border: 2px solid white;
+    cursor: pointer;
+    color: white;
+    font-size: large;
+    padding: 8px 12px;
+
+    transition: 0.3s;
+}
+
+.key-info-button:hover {
+    background-color: #00c6ff;
+    color: black;
+}
+
+/*  KEY INFO TEXT */
+.key-info {
+    margin-top: 10px;
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+/*  THEME BUTTON */
+#themeToggle {
+    background-color: #222;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 10px 15px;
+    margin-top: 15px;
+    cursor: pointer;
+    border-radius: 8px;
+
+    transition: all 0.3s ease;
+}
+
+#themeToggle:hover {
+    background-color: #00c6ff;
+    color: black;
+}
+
+.shake {
+    animation: shake 0.4s;
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}
+
+.win-glow {
+    color: #00ffcc;
+    text-shadow: 0 0 10px #00ffcc;
+}

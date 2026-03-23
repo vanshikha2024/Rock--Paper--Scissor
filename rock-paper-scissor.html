@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="css/rock-paper-scissor.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1 class="heading">🎮 Rock Paper Scissors</h1>
+
+    <!-- Buttons -->
+    <div class="buttons">
+        <button class="move-button js-rock-button">
+            <img src="images/rock-emoji.png" class="move-icon">
+        </button>
+
+        <button class="move-button js-paper-button">
+            <img src="images/paper-emoji.png" class="move-icon">
+        </button>
+
+        <button class="move-button js-scissors-button">
+            <img src="images/scissors-emoji.png" class="move-icon">
+        </button>
+    </div>
+
+    <!-- Result -->
+    <p class="js-result result"></p>
+
+    <!-- Moves -->
+    <p class="move"></p>
+
+    <!-- Scoreboard -->
+    <div class="scoreboard">
+        <p>👤 You: <span id="user-score">0</span></p>
+        <p>💻 Computer: <span id="comp-score">0</span></p>
+        <p>🤝 Tie: <span id="tie-score">0</span></p>
+    </div>
+
+    <!-- Controls -->
+    <div class="controls">
+        <button class="reset-score-button">Clear Score</button>
+        <button class="reset-score-button autoplay-button">Auto Play</button>
+        <button class="key-info-button">+</button>
+    </div>
+
+    <!-- Key Info -->
+    <p class="key-info"></p>
+
+    <!-- Theme Toggle -->
+    <button id="themeToggle">Switch to Light Mode</button>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+<script src="javascript/rock-paper-scissor.js"></script>
+
+
+</body>
+</html>
